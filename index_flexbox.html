@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+        
+        <title>Curso de HTML5 e CSS</title>
+        
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Roboto+Slab:400,700" rel="stylesheet">            
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style_flexbox.css">
+        
+    </head>
+    
+    <body>       
+        <!-- NAVEGAÇÃO -->        
+        <nav>
+            <a href="#">Lorem Ipsum</a>
+            <ul>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#portfolio">PORTFÓLIO</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+        
+        <!-- HEADER -->        
+        <header>           
+            <h1>LOREM IPSUM</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#sobre" class="botao">SAIBA MAIS</a></p> 
+        </header>
+        
+        <!-- SOBRE -->        
+        <section id="sobre">            
+            <h2>SOBRE</h2>
+            <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#contato" class="botao">ENTRE EM CONTATO</a>
+        </section>
+        
+        <!-- SERVIÇOS -->        
+        <section id="servicos">
+            <h2>SERVIÇOS</h2>            
+            <div>
+                <img src="img/configs.png" alt="Engrenagens">
+                <h3>Fácil integração</h3>
+                <p>Integra facilmente seu site a qualquer gerenciador de conteúdo.</p>
+            </div>
+            <div>
+                <img src="img/hospedagem.png" alt="Servidor">
+                <h3>Hospedagem moderna</h3>
+                <p>Não deixe seus clientes na mão. Tenha seu site 24hrs no ar.</p>
+            </div>
+            <div>
+                <img src="img/site.png" alt="Navegador">
+                <h3>Melhores práticas</h3>
+                <p>Código legível, desenvolvido com as melhores práticas.</p>
+            </div>
+            <div>
+                <img src="img/coracao.png" alt="Coração">
+                <h3>Feito com amor</h3>
+                <p>É melhor fazer seus sites com amor hoje em dia!</p>
+            </div>
+        </section>
+        
+        <!-- PORTFÓLIO -->        
+        <section id="portfolio">
+            <h2>PORTFÓLIO</h2>          
+            <img src="img/portfolio-1-mod.jpg" alt="Cogumelos">
+            <img src="img/portfolio-2-mod.jpg" alt="Cisnes no jardim">
+            <img src="img/portfolio-3-mod.jpg" alt="Catedral de Dresden em estilo medieval">
+            <img src="img/portfolio-4-mod.jpg" alt="Casa na savana africana">
+            <img src="img/portfolio-5-mod.jpg" alt="Fortificação medieval em uma ilha na suécia">
+            <img src="img/portfolio-6.jpg" alt="Ilha oceânica da Trindade">            
+        </section>
+        
+        <!-- CONTATO -->        
+        <section id="contato">
+            <h2>CONTATO</h2>
+            <p>Entre em contato conosco.</p>
+            <div>
+                <img src="img/fone.png" alt="Telefone">
+                <p><a href="tel:xx55555555">(xx) 5555 5555</a></p>
+            </div>
+            <div>
+                <img src="img/contato.png" alt="Email">
+                <p><a href="mailto:email@contato.com">email@contato.com</a></p>
+            </div>
+            
+        </section>
+        
+        <!-- FOOTER -->        
+        <footer>
+            <p>Desenvolvido por Nirlan Neckir.</p>
+        </footer>
+        
+        <!-- jQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+        
+        <!-- jQuery local fallback -->
+        <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
+
+        <!-- Bootstrap JS CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Bootstrap JS local fallback -->
+        <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="js/bootstrap.min.js"><\/script>')}</script>
+        
+        <!-- Bootstrap CSS local fallback -->
+        <script>
+            $(document).ready(function() {
+            var bodyColor = $('body').css('color');
+            if(bodyColor != 'rgb(51, 51, 51)') {
+            $("head").prepend('<link rel="stylesheet" href="css/bootstrap.min.css">');}});
+        </script>                        
+    </body>
+</html>
